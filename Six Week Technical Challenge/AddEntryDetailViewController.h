@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddEntryDetailViewController.h
 //  Six Week Technical Challenge
 //
 //  Created by Mattthew Bailey on 8/12/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AddEntryDetailViewController : UIViewController
+
 
 
 @end
-
