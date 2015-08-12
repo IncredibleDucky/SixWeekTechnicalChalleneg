@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface MatchesDataSource : NSObject
+@interface MatchTwoDataSource : NSObject
 
 @end

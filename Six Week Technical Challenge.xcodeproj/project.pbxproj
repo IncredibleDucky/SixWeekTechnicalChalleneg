@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		933346D11B7BABE500B293A7 /* EntityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933346D01B7BABE500B293A7 /* EntityController.m */; };
-		933346D71B7BB0F600B293A7 /* MatchesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 933346D61B7BB0F600B293A7 /* MatchesDataSource.m */; };
+		933346D71B7BB0F600B293A7 /* MatchTwoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 933346D61B7BB0F600B293A7 /* MatchTwoDataSource.m */; };
 		933346DA1B7BD05300B293A7 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 933346D91B7BD05300B293A7 /* Entity.m */; };
 		93A7A1881B7B979E00AB76FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7A1871B7B979E00AB76FD /* main.m */; };
 		93A7A18B1B7B979E00AB76FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7A18A1B7B979E00AB76FD /* AppDelegate.m */; };
@@ -17,7 +17,7 @@
 		93A7A1961B7B979E00AB76FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A7A1951B7B979E00AB76FD /* Images.xcassets */; };
 		93A7A1991B7B979E00AB76FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A7A1971B7B979E00AB76FD /* LaunchScreen.xib */; };
 		93A7A1A51B7B979E00AB76FD /* Six_Week_Technical_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7A1A41B7B979E00AB76FD /* Six_Week_Technical_ChallengeTests.m */; };
-		93A7A1B01B7B98F900AB76FD /* EntityDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7A1AF1B7B98F900AB76FD /* EntityDataSource.m */; };
+		93A7A1B01B7B98F900AB76FD /* MatchOneDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7A1AF1B7B98F900AB76FD /* MatchOneDataSource.m */; };
 		93A7A1B31B7B9ED900AB76FD /* AddEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7A1B21B7B9ED900AB76FD /* AddEntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +34,8 @@
 /* Begin PBXFileReference section */
 		933346CF1B7BABE500B293A7 /* EntityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityController.h; sourceTree = "<group>"; };
 		933346D01B7BABE500B293A7 /* EntityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityController.m; sourceTree = "<group>"; };
-		933346D51B7BB0F600B293A7 /* MatchesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchesDataSource.h; sourceTree = "<group>"; };
-		933346D61B7BB0F600B293A7 /* MatchesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchesDataSource.m; sourceTree = "<group>"; };
+		933346D51B7BB0F600B293A7 /* MatchTwoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchTwoDataSource.h; sourceTree = "<group>"; };
+		933346D61B7BB0F600B293A7 /* MatchTwoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchTwoDataSource.m; sourceTree = "<group>"; };
 		933346D81B7BD05300B293A7 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		933346D91B7BD05300B293A7 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		93A7A1821B7B979E00AB76FD /* Six Week Technical Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Six Week Technical Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +51,8 @@
 		93A7A19E1B7B979E00AB76FD /* Six Week Technical ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Six Week Technical ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A7A1A31B7B979E00AB76FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A7A1A41B7B979E00AB76FD /* Six_Week_Technical_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Six_Week_Technical_ChallengeTests.m; sourceTree = "<group>"; };
-		93A7A1AE1B7B98F900AB76FD /* EntityDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityDataSource.h; sourceTree = "<group>"; };
-		93A7A1AF1B7B98F900AB76FD /* EntityDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityDataSource.m; sourceTree = "<group>"; };
+		93A7A1AE1B7B98F900AB76FD /* MatchOneDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchOneDataSource.h; sourceTree = "<group>"; };
+		93A7A1AF1B7B98F900AB76FD /* MatchOneDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchOneDataSource.m; sourceTree = "<group>"; };
 		93A7A1B11B7B9ED900AB76FD /* AddEntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEntryDetailViewController.h; sourceTree = "<group>"; };
 		93A7A1B21B7B9ED900AB76FD /* AddEntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,10 +100,10 @@
 				93A7A18A1B7B979E00AB76FD /* AppDelegate.m */,
 				93A7A18F1B7B979E00AB76FD /* PairRandomizerViewController.h */,
 				93A7A1901B7B979E00AB76FD /* PairRandomizerViewController.m */,
-				93A7A1AE1B7B98F900AB76FD /* EntityDataSource.h */,
-				93A7A1AF1B7B98F900AB76FD /* EntityDataSource.m */,
-				933346D51B7BB0F600B293A7 /* MatchesDataSource.h */,
-				933346D61B7BB0F600B293A7 /* MatchesDataSource.m */,
+				93A7A1AE1B7B98F900AB76FD /* MatchOneDataSource.h */,
+				93A7A1AF1B7B98F900AB76FD /* MatchOneDataSource.m */,
+				933346D51B7BB0F600B293A7 /* MatchTwoDataSource.h */,
+				933346D61B7BB0F600B293A7 /* MatchTwoDataSource.m */,
 				933346CF1B7BABE500B293A7 /* EntityController.h */,
 				933346D01B7BABE500B293A7 /* EntityController.m */,
 				933346D81B7BD05300B293A7 /* Entity.h */,
@@ -249,8 +249,8 @@
 				93A7A1B31B7B9ED900AB76FD /* AddEntryDetailViewController.m in Sources */,
 				93A7A1911B7B979E00AB76FD /* PairRandomizerViewController.m in Sources */,
 				93A7A1881B7B979E00AB76FD /* main.m in Sources */,
-				93A7A1B01B7B98F900AB76FD /* EntityDataSource.m in Sources */,
-				933346D71B7BB0F600B293A7 /* MatchesDataSource.m in Sources */,
+				93A7A1B01B7B98F900AB76FD /* MatchOneDataSource.m in Sources */,
+				933346D71B7BB0F600B293A7 /* MatchTwoDataSource.m in Sources */,
 				933346D11B7BABE500B293A7 /* EntityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

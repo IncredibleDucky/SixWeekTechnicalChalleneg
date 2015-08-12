@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EntityDataSource : NSObject
+@interface MatchOneDataSource : NSObject
 
 @end

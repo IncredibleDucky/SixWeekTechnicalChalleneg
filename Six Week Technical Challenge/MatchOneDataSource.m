@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 Mattthew Bailey. All rights reserved.
 //
 
-#import "EntityDataSource.h"
+#import "MatchOneDataSource.h"
 #import "EntityController.h"
 
 static NSString *cellID = @"cellID";
 
 
-@interface EntityDataSource () <UITableViewDataSource>
+@interface MatchOneDataSource () <UITableViewDataSource>
 
 @end
 
-@implementation EntityDataSource
+@implementation MatchOneDataSource
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];

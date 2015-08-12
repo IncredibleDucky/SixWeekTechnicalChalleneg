@@ -12,63 +12,63 @@
 @interface PairRandomizerViewController ()
 
 
-@property (weak, nonatomic) IBOutlet UITableView *matchesTableView;
-@property (weak, nonatomic) IBOutlet UITableView *entityTableView;
+@property (weak, nonatomic) IBOutlet UITableView *matchTwoTableView;
+@property (weak, nonatomic) IBOutlet UITableView *matchOneTableView;
 @end
 
 @implementation PairRandomizerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
-                                                                  attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.entityTableView
-                                                                  attribute:NSLayoutAttributeRight multiplier:1.0
-                                                                   constant:0];
-    [self.view addConstraint:constraint];
-    constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
-                                                                  attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view
-                                                                  attribute:NSLayoutAttributeTop multiplier:1.0
-                                                                   constant:64.0];
-    [self.view addConstraint:constraint];
-   constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
-                                                                  attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view
-                                                                  attribute:NSLayoutAttributeRight multiplier:1.0
-                                                                   constant:0];
-    [self.view addConstraint:constraint];
-    constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
-                                                                  attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view
-                                                                  attribute:NSLayoutAttributeBottom multiplier:1.0
-                                                                   constant:0 ];
-    [self.view addConstraint:constraint];
-    constraint = [NSLayoutConstraint constraintWithItem:self.entityTableView
-                                                                  attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view
-                                                                  attribute:NSLayoutAttributeTop multiplier:1.0
-                                                                   constant:64.0];
-    [self.view addConstraint:constraint];
-   constraint = [NSLayoutConstraint constraintWithItem:self.entityTableView
-                                                                  attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view
-                                                                  attribute:NSLayoutAttributeBottom multiplier:1.0
-                                                                   constant:0];
-    [self.view addConstraint:constraint];
-    constraint = [NSLayoutConstraint constraintWithItem:self.entityTableView
-                                                                  attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view
-                                                                  attribute:NSLayoutAttributeLeft multiplier:1.0
-                                                                   constant:0];
-    [self.view addConstraint:constraint];
-    constraint = [NSLayoutConstraint constraintWithItem:self.entityTableView
+//    // Do any additional setup after loading the view, typically from a nib.
+//    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
+//                                                                  attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.entityTableView
+//                                                                  attribute:NSLayoutAttributeRight multiplier:1.0
+//                                                                   constant:0];
+//    [self.view addConstraint:constraint];
+//    constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
+//                                                                  attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view
+//                                                                  attribute:NSLayoutAttributeTop multiplier:1.0
+//                                                                   constant:64.0];
+//    [self.view addConstraint:constraint];
+//   constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
+//                                                                  attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view
+//                                                                  attribute:NSLayoutAttributeRight multiplier:1.0
+//                                                                   constant:0];
+//    [self.view addConstraint:constraint];
+//    constraint = [NSLayoutConstraint constraintWithItem:self.matchesTableView
+//                                                                  attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view
+//                                                                  attribute:NSLayoutAttributeBottom multiplier:1.0
+//                                                                   constant:0 ];
+//    [self.view addConstraint:constraint];
+//    constraint = [NSLayoutConstraint constraintWithItem:self.entityTableView
+//                                                                  attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view
+//                                                                  attribute:NSLayoutAttributeTop multiplier:1.0
+//                                                                   constant:64.0];
+//    [self.view addConstraint:constraint];
+//   constraint = [NSLayoutConstraint constraintWithItem:self.entityTableView
+//                                                                  attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view
+//                                                                  attribute:NSLayoutAttributeBottom multiplier:1.0
+//                                                                   constant:0];
+//    [self.view addConstraint:constraint];
+//    constraint = [NSLayoutConstraint constraintWithItem:self.entityTableView
+//                                                                  attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view
+//                                                                  attribute:NSLayoutAttributeLeft multiplier:1.0
+//                                                                   constant:0];
+//    [self.view addConstraint:constraint];
+   NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.matchOneTableView
                                               attribute:NSLayoutAttributeWidth
                                               relatedBy:NSLayoutRelationEqual
-                                                 toItem:self.matchesTableView
+                                                 toItem:self.view
                                               attribute:NSLayoutAttributeWidth
-                                             multiplier:1.0
+                                             multiplier:0.5
                                                constant:0];
     [self.view addConstraint:constraint];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [self.entityTableView reloadData];
-    [self.matchesTableView reloadData];
+    [self.matchOneTableView reloadData];
+    [self.matchTwoTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,6 +23,7 @@ static NSString * const entitiesKey = @"Entities";
         [sharedInstance loadFromPersistentStorage];
  //Instantiate Shared Instance Properties
     });
+
     return sharedInstance;
 }
 
